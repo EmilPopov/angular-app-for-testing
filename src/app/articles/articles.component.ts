@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { FakeData } from '../api/data';
 
 @Component({
@@ -11,5 +11,13 @@ export class ArticlesComponent {
   articles = FakeData.articles
 
   constructor() { }
+
+
+  onClick(article){
+    console.log(article.title);
+
+ 
+    
+  }
 
 }

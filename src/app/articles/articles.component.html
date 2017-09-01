@@ -1,8 +1,12 @@
 <div>
   <h2>All</h2>
   <ul>
-    <li *ngFor="let article of articles">
+    <li *ngFor="let article of articles" (click)="onClick(article)">
       {{article.title}}
     </li>
   </ul>
+  <div>
+    <h2>Details</h2>
+    <article-details [article] ="'TEST'"></article-details>
+  </div>
 </div>

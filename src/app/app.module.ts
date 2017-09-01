@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { ArticleDetailsComponent } from './articles/article-details/article-details.component';
 
 
 
@@ -11,6 +12,7 @@ import { ArticlesComponent } from './articles/articles.component';
   declarations: [
     AppComponent,
     ArticlesComponent,
+    ArticleDetailsComponent,
 
   ],
   imports: [
