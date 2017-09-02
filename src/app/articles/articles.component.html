@@ -1,12 +1,17 @@
 <div>
-  <h2>All</h2>
-  <ul>
-    <li *ngFor="let article of articles" (click)="onClick(article)">
-      {{article.title}}
-    </li>
-  </ul>
-  <div>
+  <div class="half-container" [style.background]="'aquamarine'">    
+    <h2>All</h2>
+
+    <md-list>
+      <md-list-item *ngFor="let article of articles" (click)="selectedArticle = article">
+        <button md-button>{{article.title}}</button>
+      </md-list-item>
+    </md-list>
+  </div>
+  <div class="half-container" [style.background]="'peachpuff'">
     <h2>Details</h2>
-    <article-details [article] ="'TEST'"></article-details>
+    <div *ngIf="selectedArticle">
+      <article-details [article]="selectedArticle"></article-details>
+    </div>
   </div>
 </div>

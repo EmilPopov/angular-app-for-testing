@@ -1,0 +1,6 @@
+<!--component html goes here -->
+<p *ngIf="filteredDescription">{{filteredDescription}}</p>
+<button *ngIf="filteredDescription.length !== description.length"
+ md-raised-button 
+ color="primary" 
+ (click)="readMore()">Read more</button>

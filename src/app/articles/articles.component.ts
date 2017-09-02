@@ -1,5 +1,6 @@
 import { Component, Output } from '@angular/core';
 import { FakeData } from '../api/data';
+import { Article } from '../models/article'
 
 @Component({
   selector: 'articles',
@@ -8,16 +9,10 @@ import { FakeData } from '../api/data';
 })
 export class ArticlesComponent {
 
+
+  selectedArticle:Article;
   articles = FakeData.articles
 
   constructor() { }
-
-
-  onClick(article){
-    console.log(article.title);
-
- 
-    
-  }
 
 }
