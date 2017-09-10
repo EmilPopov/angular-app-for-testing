@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ArticleDescriptionComponent implements OnInit {
 
     @Input() description: string;
-    filteredDescription: string;
+    @Input() filteredDescription: string;
     characters: number = 500;
 
     ngOnInit() {

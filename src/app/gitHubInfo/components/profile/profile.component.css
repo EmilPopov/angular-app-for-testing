@@ -1,0 +1,14 @@
+img{
+    width: 150px;
+    height: 150px;
+}
+
+h1{
+    background: indigo;
+    color: white;
+}
+
+label{
+    background: aqua;
+    color: white;
+}

@@ -1,0 +1,10 @@
+<div *ngIf="followerData">
+  <ul>
+    <li *ngFor="let follower of followerData">
+      <a [href]="follower.html_url">
+        <h4>{{follower.login}}</h4>
+      </a>
+      <img [src]="follower.avatar_url" alt="">      
+    </li>
+  </ul>
+</div>

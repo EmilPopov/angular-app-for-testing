@@ -1,0 +1,23 @@
+<div *ngIf='profileData'>
+  <h1>
+    {{profileData.name}}
+  </h1>
+  <img [src]="profileData.avatar_url" alt="">
+
+
+  <p>
+    <label>Location:</label> {{profileData.location}}
+  </p>
+  <p>
+    <label>Bio:</label> {{profileData.bio}}
+  </p>
+  <p>
+    <label>Public repos:</label> {{profileData.public_repos}}
+  </p>
+  <p>
+    <label>Followers:</label> {{profileData.followers}}
+    <button md-raised-button color="primary" (click)="toggleFollowers()">VIEW ALL</button>
+  </p>
+</div>
+
+<followers *ngIf="showFollowers"></followers>

@@ -1,7 +1,10 @@
 <p>
   {{article.title}}
 </p>
-<article-description [description] = article.description></article-description>
+<article-description 
+[description] = article.description 
+[filteredDescription] = 'article.description.substr(0, 250)'
+></article-description>
 <p>
   {{article.author}}
 </p>
