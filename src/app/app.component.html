@@ -4,8 +4,19 @@
     Welcome to {{title}}!
   </h1>
 </div>
-<!-- <h2>Articles</h2>
-<articles></articles> -->
-<profile></profile>
 
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav">
+    <a md-raised-button color="primary" routerLink="/articles">Articles Demo</a>
+    <a md-raised-button color="primary" routerLink="/githubprofile">GitHub Profile Demo</a>
+    <a md-raised-button color="primary" routerLink="/cars">Cars Demo</a>
+  </md-sidenav>
 
+  <div class="example-sidenav-content">
+    <button type="button" md-button (click)="sidenav.open()">
+        Open sidenav
+      </button>
+  </div>
+
+</md-sidenav-container>
+<router-outlet></router-outlet>

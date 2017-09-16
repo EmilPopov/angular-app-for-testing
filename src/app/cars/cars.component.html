@@ -1,0 +1,24 @@
+<div *ngIf="cars">
+  <md-tab-group>
+    <md-tab label="Cars Home">
+      <ul>
+        <li *ngFor="let car of cars | slice:0:3">
+          <h3>{{car.make}}</h3>
+          <img [src]="car.image" alt="">
+        </li>
+      </ul>
+    </md-tab>
+    <md-tab label="All Cars">
+        <ul>
+            <li *ngFor="let car of cars">
+              <a [routerLink]="['/cars', car.id]">
+                <h3>{{car.make}}</h3>
+                <span>{{car.model}}</span>             
+                <img [src]="car.image" alt="">
+              </a>
+            </li>
+          </ul>
+    </md-tab>
+  </md-tab-group>
+
+</div>

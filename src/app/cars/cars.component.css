@@ -1,0 +1,8 @@
+img{
+    display: block;
+}
+li{
+  display: inline-block;
+  /* float: left;  */
+  width: 30%;   
+}
